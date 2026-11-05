@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone shelf</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --link: #1a5fb4; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161618; --fg: #ececec; --muted: #a8a8ad; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: 1.7em; margin: 0 0 4px; }
+  h2 { font-size: 1.1em; margin: 28px 0 6px; }
+  p, li { margin: 0 0 10px; }
+  .muted { color: var(--muted); }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+<h1>rclone shelf</h1>
+<p class="muted">A private, single-user file copy setup.</p>
+
+<h2>What it is</h2>
+<p>rclone shelf is one person's own setup of <a href="https://rclone.org">rclone</a>, the open-source file copying tool. It runs on its owner's computer and checks every 10 minutes while the computer is awake. It copies selected work files from that computer to one folder in the owner's Google Drive, so the owner can read them on a phone. A copy can wait while the computer sleeps, while a run is still busy, or while the connection fails.</p>
+<p>The owner can leave a written request note in that folder. The setup reads those notes and copies a requested edit back to the computer. Some files are never overwritten this way; their edits are set aside for review.</p>
+
+<h2>Who can use it</h2>
+<p>It is intended only for its owner's personal use and is not offered as a service to others. There is nothing to sign up for or download here.</p>
+
+<h2>Google data</h2>
+<p>It uses Google Drive access to list, read, upload, update and move files in that one folder, and to move a file there to the Drive trash when the owner's written request names it. The setup itself does not permanently delete the owner's files. Details: <a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Owner</h2>
+<p>The <a href="https://github.com/PeanutbutterProjects">PeanutbutterProjects</a> account on GitHub.</p>
+
+<p class="muted">Not affiliated with the rclone project or with Google.</p>
+</main>
+</body>
+</html>
